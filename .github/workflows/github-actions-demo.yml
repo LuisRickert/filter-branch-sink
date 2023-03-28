@@ -23,6 +23,6 @@ jobs:
         run: git submodule update --remote --merge &&
              git config user.email "actions@github.com" && 
              git config user.name "GitHub Documentation update Bot" && 
-             git commit -a --allow-empty -m "" &&
+             git commit -a  -m "chore: update documentation " &&
              git push --force 
       
