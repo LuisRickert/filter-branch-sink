@@ -20,7 +20,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: update sumodule
-        run: git submodule update --remote --merge &&
+        run: git submodule foreach git pull origin doc
              git config user.email "actions@github.com" && 
              git config user.name "GitHub Documentation update Bot" && 
              git commit -a  -m "DocBot update documentation " &&
